@@ -2,6 +2,8 @@ name: Deploy Streamlit to GitHub Pages
 on:
   push:
     branches: [ main ] # Change to master if your default branch is named master
+  workflow_dispatch: # <-- Add this line to enable manual triggering
+
 
 permissions:
   contents: read
