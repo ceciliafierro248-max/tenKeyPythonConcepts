@@ -12,23 +12,26 @@ with st.sidebar:
 
 st.title("Welcome!")
 st.text("Today I will be going over 10 important Python concepts to know. Let's get started!")
-st.markdown("*Thank you ____ for educating me on a few and inspringing the creation of this app!*")
+st.markdown("*Thank you ____ for educating me on a few things and inspringing the creation of this app!*")
 st.text("")
 
 st.subheader("1: Printing", divider='gray')
-st.markdown("Printing, or knowledge of print() is critical in dugging and creating Python programs! Learning print(Hello, world!) is a rite of passage for any beginner learning to code in Python")
+st.markdown("Printing, or knowledge of print(), is critical in debugging and creating Python programs! Learning print(Hello, world!) is a rite of passage for any beginner learning to code in Python.")
 st.text("")
 st.markdown("*What does print() do?*")
 st.markdown("When executed, print() returns whatever is inside of the parenthesis in the console. This could be the result of a function, a simple string like hi, or a message critical to debuging your program. Let's look at the code!")
 st.text("")
 
+# Add comments to the code itself
 helloWorld = '''print("Hello, world!")
 '''
 
+# Add comments to the code itself
 dogPrint = '''dog = 1
 print(dog)
 '''
 
+# Add comments to the code itself
 awesomePrint = '''def awesome(lyric):
     awesomeLyrics = ["Everything is awesome!"]
     awesomeLyrics.append(lyric)
@@ -40,3 +43,30 @@ awesome("Everything is cool when you are part of a team!")'''
 st.code(helloWorld, language="python")
 st.code(dogPrint, language="python")
 st.code(awesomePrint, language="python")
+
+st.text("")
+st.text("")
+
+st.subheader("2: Variables", divider='gray')
+st.markdown("You can not code complex programs without variables. Variables help you as the programmer keep track of different values and implement functions, loops, and logic into your program")
+st.text("")
+st.markdown("*What do variables do?*")
+st.markdown("When executed, variables storage a value. Let's see an example!")
+st.text("")
+
+userVariable = '''user = "Ava"
+# User is storaging a string (or letter) value
+
+print(user)
+# When executed, Ava will be printed in the console"'''
+
+countVariable = '''count = 3
+# Count is storaging a integer (or non decimal number)'''
+
+doneVariable = '''done = False
+# Done is storaging a boolean value (aka. True and False)'''
+
+st.code(userVariable)
+st.code(countVariable)
+st.code(doneVariable)
+
