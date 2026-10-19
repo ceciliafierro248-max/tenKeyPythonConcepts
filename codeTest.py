@@ -1,3 +1,4 @@
+
 # helloWorld
 print("Hello, world!")
 
@@ -15,3 +16,16 @@ def awesome(lyric):
     return
 
 awesome("Everything is cool when you are part of a team!")
+
+# userVariable
+
+user = "Ava"
+print(user)
+
+# countVariable
+
+count = 3
+
+# doneVariable
+
+done = False
